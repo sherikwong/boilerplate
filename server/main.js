@@ -4,7 +4,7 @@ const port = process.env.PORT || 1337;
 
 db.sync()
   .then(() => {
-    app.listen(1337, () => {
+    app.listen(port, () => {
       console.log('Listening on 1337...')
     })
   })
